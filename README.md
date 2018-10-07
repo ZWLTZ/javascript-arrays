@@ -82,7 +82,7 @@ var evenNumbers = new Array();
 
 数组是_ordered_, 意味着它们中的元素将始终以相同的顺序出现. 数组`[1,1,2]`与数组`[1,2,1]`不同.
 
-**TODO**: In `arrays.js`, define a variable called `chocolateBars`. Its value should be an array of the strings `snickers`, `hundred grand`, `kitkat`, and `skittles`.
+**TODO**: 在`arrays.js`中，定义一个名为 "CopyToAtBar" 的变量. 它的值应该是一组字符串 `snickers`, `hundred grand`, `kitkat`, and `skittles`.
 
 ## 添加一个元素
 
@@ -153,9 +153,9 @@ myArray // [1, 2, 3, undefined, undefined, 5]
 
 最好不要上面操作. 我们应该将数组视为可以**任意长度**的有序信息列表，因此更新特定索引应该感觉像是一件奇怪的事情. 此外，如果我们还需要增加数组的长度，添加元素会直接插入`undefined`（如上所示）, 这可能会导致意外行为.
 
-** TODO **：在`arrays.js`中，定义两个函数，`addElementToBeginningOfArray`和`destructivelyAddElementToBeginningOfArray`. 这两个函数都有两个参数,一个数组和一个元素添加到数组的开头，两个函数都应该将元素添加到数组的开头,然后返回整个数组. 破坏性函数`destructivelyAddElementToBeginningOfArray`应该改变传入的原始数组; 另一方面，`addElementToBeginningOfArray`应返回一个新数组**而不是修改原始**.
+**TODO**： 在`arrays.js`中，定义两个函数，`addElementToBeginningOfArray`和`destructivelyAddElementToBeginningOfArray`. 这两个函数都有两个参数,一个数组和一个元素添加到数组的开头，两个函数都应该将元素添加到数组的开头,然后返回整个数组. 破坏性函数`destructivelyAddElementToBeginningOfArray`应该改变传入的原始数组; 另一方面，`addElementToBeginningOfArray`应返回一个新数组**而不是修改原始**.
 
-** TODO **：定义另外两个函数, `addElementToEndOfArray`和`destructivelyAddElementToEndOfArray`. 这些函数还有两个参数，一个数组和一个元素添加到数组的末尾. `addElementToEndOfArray` **不应该**改变原始数组; `destructivelyAddElementToEndOfArray` **应该**改变原始数组.
+**TODO**：定义另外两个函数, `addElementToEndOfArray`和`destructivelyAddElementToEndOfArray`. 这些函数还有两个参数，一个数组和一个元素添加到数组的末尾. `addElementToEndOfArray` **不应该**改变原始数组; `destructivelyAddElementToEndOfArray` **应该**改变原始数组.
 
 ## 访问元素
 
@@ -175,7 +175,7 @@ console.log(entrepreneurs[2] + bio);
 entrepreneurs[9];
 ```
 
-** TODO **：在`arrays.js`中定义一个名为`accessElementInArray`的函数. 该函数应该接受一个数组和一个索引, 并返回该索引处的元素.
+**TODO**：在`arrays.js`中定义一个名为`accessElementInArray`的函数. 该函数应该接受一个数组和一个索引, 并返回该索引处的元素.
 
 ## 删除元素
 
@@ -192,7 +192,7 @@ days // ["Tuesday", "Wednesday"]
 ```
 和`unshift`一样，这个方法是_destructive_破坏; 它**改变**底层数组。
 
-** TODO **：在`arrays.js`中定义一个名为`destructivelyRemoveElementFromBeginningOfArray`的函数，它以数组作为唯一参数并删除第一个元素。 然后你的函数应该返回整个数组，它应该**改变数组。
+**TODO** ：在`arrays.js`中定义一个名为`destructivelyRemoveElementFromBeginningOfArray`的函数，它以数组作为唯一参数并删除第一个元素。 然后你的函数应该返回整个数组，它应该**改变数组**。
 
 因为我们倾向于避免破坏，所以还有一种方法可以在不更改底层数组的情况下从数组中删除第一个元素：我们可以使用`slice`方法。
 
@@ -228,7 +228,7 @@ cats.slice(-2) // ["Garfield", "Otis"]
 cats.slice(-1) // ["Otis"]
 ```
 
-**TODO**:在`arrays.js`中定义一个名为`removeElementFromBeginningOfArray`的函数. 它需要一个`array`作为唯一的参数. 该函数应该删除数组中的第一个元素. 这个函数应该在同一行返回_entire_整个的数组,它**不应该**改变原始数组.
+**TODO** : 在`arrays.js`中定义一个名为`removeElementFromBeginningOfArray`的函数. 它需要一个`array`作为唯一的参数. 该函数应该删除数组中的第一个元素. 这个函数应该在同一行返回_entire_整个的数组,它**不应该**改变原始数组.
 
 ### 从数组的末尾开始
 
@@ -243,7 +243,7 @@ iceCreams // ["chocolate", "vanilla"]
 ```
 和`push`一样，这个方法是_destructive_破坏; 它**改变**底层数组。
 
-** TODO **：在`arrays.js`中定义一个名为`destructivelyRemoveElementFromEndOfArray`的函数, 它以数组作为唯一参数并删除最后一个元素. 你的函数应该返回整个数组，它应该**改变数组。
+**TODO**：在`arrays.js`中定义一个名为`destructivelyRemoveElementFromEndOfArray`的函数, 它以数组作为唯一参数并删除最后一个元素. 你的函数应该返回整个数组，它应该**改变数组**。
 
 我们可以使用`slice`来执行上述操作,而无需更改底层数组. 它比删除第一个元素要花费更多的工作,因为我们希望切片从索引"0"（记住,第一个元素在索引"0"!）到结尾. 嗯 - 数组有什么属性可以帮助我们？`length`!
 
@@ -255,7 +255,7 @@ iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
 iceCreams // ["chocolate", "vanilla", "raspberry"]
 ```
 
-**TODO**:在`arrays.js`中定义一个名为`removeElementFromEndOfArray`的函数,它以数组作为唯一参数并删除最后一个元素. 你的函数应该返回没有最后一个元素的数组，它**不应该**改变原始数组。
+**TODO**: 在`arrays.js`中定义一个名为`removeElementFromEndOfArray`的函数,它以数组作为唯一参数并删除最后一个元素. 你的函数应该返回没有最后一个元素的数组，它**不应该**改变原始数组。
 
 ### 从数组的中间
 
@@ -291,7 +291,7 @@ items // [1, 6, 7, 3, 4]
 ```
 正如我们上面提到的，在数组中间的特定索引处添加元素_feels_感觉不可思议 - 这是难以做到的，与对象一起（我们有键而不是顺序索引）这样做更自然。
 
-**BONUS**
+**意外收获**
 
 我们可以使用`slice`,结合扩展运算符,使得从数组中间删除更容易.
 
@@ -330,7 +330,7 @@ arr['02']: // '02' the string is *not* 2, so you get undefined
 
 或者用一个数组索引一个变量，该变量的内容不以任何方式表示一个数字——比如键入`myArray['bonobo monkey'] = 27`.
 
-你不会得到任何抱怨，因为你不给数组添加一个索引，而是添加了一个**属性*。说到哪一个…
+你不会得到任何抱怨，因为你不给数组添加一个索引，而是添加了一个**属性**。说到哪一个…
 
 ### 我们可以将属性添加到数组中
 
